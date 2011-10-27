@@ -1,0 +1,5 @@
+To use this assembly SoX for Android: replace in the file /jni/Application.mk DIRECTORY_TO_OBJ variable to the full path to your folder obj and then run the ndk-build.
+To test the SoX can compile this program and start it on your Android device. The standard program will play the file / sdcard / testwww.flac, in the event that this 16-bit file.
+Attention! This program is unstable, so I can not guarantee the music on your device.
+If you want to do something to help this project - please contact us by email: wkyborgw@gmail.com
+Enjoy!
