@@ -38,97 +38,102 @@
 #include "../ffmpeg/libavutil/avutil.h"
 #include "../ffmpeg/libavutil/samplefmt.h"
 
-    sox_format_t * in, *in2;
-	sox_format_t * out;
-	sox_effects_chain_t * chain;
-	struct thread_data{
-		size_t *buffer_size;
-		char *buffer[18432];
+sox_format_t * in, *in2;
+sox_format_t * out;
+sox_effects_chain_t * chain;
+struct thread_data {
+	size_t *buffer_size;
+	char *buffer[18432];
 
-	};
-	size_t buffer_size;
-	struct thread_data thread_data;
-	int alldone;
-	JNIEnv* env2;
-	jobject obj2;
-	jclass cls;
-	jmethodID mid, mid2;
-	jbyteArray array2;
-	char *buffer;
+};
+size_t buffer_size;
+struct thread_data thread_data;
+int alldone;
+JNIEnv* env2;
+jobject obj2;
+jclass cls;
+jmethodID mid, mid2;
+jbyteArray array2;
+char *buffer;
 
 void *thread_func() {
 
-	int numbers=0;
+	int numbers = 0;
 
-	while(alldone!=2) {
+	while (alldone != 2) {
 
-		int buf=buffer_size;
-		if (buffer_size!=numbers) {
+		int buf = buffer_size;
+		if (buffer_size != numbers) {
 
-			int send=0;
-			while (send<buf-numbers) {
+			int send = 0;
+			while (send < buf - numbers) {
 
-				    if (buf-numbers-send<17000) {
+				if (buf - numbers - send < 17000) {
 
-			        jbyte *bytes = (*env2)->GetByteArrayElements(env2, array2, NULL);
-                    memmove(bytes, (jbyte *)(buffer+numbers+send), (buf-numbers-send));
-			  	    (*env2)->ReleaseByteArrayElements(env2, array2, (jbyte *)bytes, 0);
+					jbyte *bytes = (*env2)->GetByteArrayElements(env2, array2,
+							NULL);
+					memmove(bytes, (jbyte *) (buffer + numbers + send),
+							(buf - numbers - send));
+					(*env2)->ReleaseByteArrayElements(env2, array2,
+							(jbyte *) bytes, 0);
 
-				    (*env2)->CallStaticVoidMethod(env2, cls, mid, buf-numbers-send);
+					(*env2)->CallStaticVoidMethod(env2, cls, mid,
+							buf - numbers - send);
 
-				    send+=buf-numbers-send;
+					send += buf - numbers - send;
 				} else {
 
-					jbyte *bytes = (*env2)->GetByteArrayElements(env2, array2, NULL);
+					jbyte *bytes = (*env2)->GetByteArrayElements(env2, array2,
+							NULL);
 
-					memmove(bytes, (jbyte *)(buffer+numbers+send), 17000);
-					(*env2)->ReleaseByteArrayElements(env2, array2, (jbyte *)bytes, 0);
+					memmove(bytes, (jbyte *) (buffer + numbers + send), 17000);
+					(*env2)->ReleaseByteArrayElements(env2, array2,
+							(jbyte *) bytes, 0);
 					(*env2)->CallStaticVoidMethod(env2, cls, mid, 17000);
-                    send+=17000;
+					send += 17000;
 				}
 			}
-		    if (alldone==1) {
-			    alldone=2;
-		    }
+			if (alldone == 1) {
+				alldone = 2;
+			}
 		}
 
-		numbers=buf;
+		numbers = buf;
 
 	}
 
 }
 
-JNIEXPORT jint JNICALL Java_com_sox_player_SoxPlayerActivity_play(
-		JNIEnv* env, jobject obj, jbyteArray array) {
+JNIEXPORT jint JNICALL Java_com_sox_player_SoxPlayerActivity_play(JNIEnv* env,
+		jobject obj, jbyteArray array) {
 	int argc;
 	char * args[3];
 	char * argv[3];
-	obj2=obj;
-	env2=env;
-	array2=array;
+	obj2 = obj;
+	env2 = env;
+	array2 = array;
 
 	sox_effects_chain_t * chain;
 	sox_effect_t * e;
 	argv[1] = "/sdcard/testwww.flac";
 
 	argc = 3;
-    size_t number_read;
+	size_t number_read;
 
 	/* All libSoX applications must start by initialising the SoX library */
 	sox_init();
 
 	/* Open the input file (with default parameters) */
 	in = sox_open_read(argv[1], NULL, NULL, NULL);
-    #define MAX_SAMPLES (size_t)2000000
-
+#define MAX_SAMPLES (size_t)2000000
 
 	cls = (*env)->GetObjectClass(env, obj);
 	mid = (*env)->GetStaticMethodID(env, cls, "writeBytes", "(I)V");
 
 	out = sox_open_memstream_write(&buffer, &buffer_size, &in->signal, NULL,
 			"sox", NULL);
-	in->encoding.bits_per_sample=16;
-			  out->encoding.bits_per_sample=16;
+	in->encoding.bits_per_sample = 16;
+	out->encoding.bits_per_sample = 16;
 
 	pthread_t thread;
 	pthread_attr_t attr;
@@ -139,7 +144,7 @@ JNIEXPORT jint JNICALL Java_com_sox_player_SoxPlayerActivity_play(
 	pthread_attr_setdetachstate(&attr, PTHREAD_CREATE_JOINABLE);
 	rc = pthread_create(&thread, &attr, thread_func, NULL);
 
-	 chain = sox_create_effects_chain(&in->encoding, &out->encoding);
+	chain = sox_create_effects_chain(&in->encoding, &out->encoding);
 	/* The first effect in the effect chain must be something that can source
 	 * samples; in this case, we use the built-in handler that inputs
 	 * data from an audio file */
@@ -169,19 +174,18 @@ JNIEXPORT jint JNICALL Java_com_sox_player_SoxPlayerActivity_play(
 	sox_flow_effects(chain, NULL, NULL);
 
 	pthread_join(thread, &status);
-	alldone=1;
+	alldone = 1;
 	sox_delete_effects_chain(chain);
 	sox_close(out);
 
 	sox_close(in);
 
-    #if !defined FIXED_BUFFER
-	    free(buffer);
-    #endif
+#if !defined FIXED_BUFFER
+	free(buffer);
+#endif
 	sox_quit();
 
 	return 0;
-
 
 }
 
