@@ -1,0 +1,197 @@
+/home/user/Dropbox/HelloNDK/obj/local/armeabi/objs-debug/sox/formats.o: \
+ /home/user/Dropbox/HelloNDK/jni/sox/src/formats.c \
+ /home/user/Dropbox/HelloNDK/jni/sox/src/sox_i.h \
+ /home/user/Dropbox/HelloNDK/jni/sox/src/soxomp.h \
+ /home/user/Dropbox/HelloNDK/jni/sox/src/soxconfig.h \
+ /home/user/Dropbox/HelloNDK/jni/sox/src/sox.h \
+ /home/user/android-ndk-r5b/platforms/android-3/arch-arm/usr/include/limits.h \
+ /home/user/android-ndk-r5b/platforms/android-3/arch-arm/usr/include/sys/cdefs.h \
+ /home/user/android-ndk-r5b/platforms/android-3/arch-arm/usr/include/sys/cdefs_elf.h \
+ /home/user/android-ndk-r5b/platforms/android-3/arch-arm/usr/include/sys/limits.h \
+ /home/user/android-ndk-r5b/platforms/android-3/arch-arm/usr/include/linux/limits.h \
+ /home/user/android-ndk-r5b/platforms/android-3/arch-arm/usr/include/machine/internal_types.h \
+ /home/user/android-ndk-r5b/platforms/android-3/arch-arm/usr/include/machine/limits.h \
+ /home/user/android-ndk-r5b/platforms/android-3/arch-arm/usr/include/sys/syslimits.h \
+ /home/user/android-ndk-r5b/platforms/android-3/arch-arm/usr/include/stdio.h \
+ /home/user/android-ndk-r5b/platforms/android-3/arch-arm/usr/include/sys/_types.h \
+ /home/user/android-ndk-r5b/platforms/android-3/arch-arm/usr/include/machine/_types.h \
+ /home/user/android-ndk-r5b/platforms/android-3/arch-arm/usr/include/sys/types.h \
+ /home/user/android-ndk-r5b/platforms/android-3/arch-arm/usr/include/stdint.h \
+ /home/user/android-ndk-r5b/platforms/android-3/arch-arm/usr/include/linux/posix_types.h \
+ /home/user/android-ndk-r5b/platforms/android-3/arch-arm/usr/include/linux/stddef.h \
+ /home/user/android-ndk-r5b/platforms/android-3/arch-arm/usr/include/linux/compiler.h \
+ /home/user/android-ndk-r5b/platforms/android-3/arch-arm/usr/include/asm/posix_types.h \
+ /home/user/android-ndk-r5b/platforms/android-3/arch-arm/usr/include/asm/types.h \
+ /home/user/android-ndk-r5b/platforms/android-3/arch-arm/usr/include/linux/types.h \
+ /home/user/android-ndk-r5b/platforms/android-3/arch-arm/usr/include/machine/kernel.h \
+ /home/user/android-ndk-r5b/platforms/android-3/arch-arm/usr/include/sys/sysmacros.h \
+ /home/user/android-ndk-r5b/platforms/android-3/arch-arm/usr/include/stdlib.h \
+ /home/user/android-ndk-r5b/platforms/android-3/arch-arm/usr/include/string.h \
+ /home/user/android-ndk-r5b/platforms/android-3/arch-arm/usr/include/malloc.h \
+ /home/user/android-ndk-r5b/platforms/android-3/arch-arm/usr/include/alloca.h \
+ /home/user/android-ndk-r5b/platforms/android-3/arch-arm/usr/include/strings.h \
+ /home/user/android-ndk-r5b/platforms/android-3/arch-arm/usr/include/memory.h \
+ /home/user/Dropbox/HelloNDK/jni/sox/src/soxstdint.h \
+ /home/user/Dropbox/HelloNDK/jni/sox/src/util.h \
+ /home/user/android-ndk-r5b/platforms/android-3/arch-arm/usr/include/sys/stat.h \
+ /home/user/android-ndk-r5b/platforms/android-3/arch-arm/usr/include/sys/time.h \
+ /home/user/android-ndk-r5b/platforms/android-3/arch-arm/usr/include/linux/time.h \
+ /home/user/android-ndk-r5b/platforms/android-3/arch-arm/usr/include/linux/stat.h \
+ /home/user/android-ndk-r5b/platforms/android-3/arch-arm/usr/include/endian.h \
+ /home/user/android-ndk-r5b/platforms/android-3/arch-arm/usr/include/sys/endian.h \
+ /home/user/Dropbox/HelloNDK/jni/sox/src/xmalloc.h \
+ /home/user/android-ndk-r5b/platforms/android-3/arch-arm/usr/include/math.h \
+ /home/user/android-ndk-r5b/platforms/android-3/arch-arm/usr/include/errno.h \
+ /home/user/android-ndk-r5b/platforms/android-3/arch-arm/usr/include/linux/errno.h \
+ /home/user/android-ndk-r5b/platforms/android-3/arch-arm/usr/include/asm/errno.h \
+ /home/user/android-ndk-r5b/platforms/android-3/arch-arm/usr/include/asm-generic/errno.h \
+ /home/user/android-ndk-r5b/platforms/android-3/arch-arm/usr/include/asm-generic/errno-base.h \
+ /home/user/android-ndk-r5b/platforms/android-3/arch-arm/usr/include/byteswap.h \
+ /home/user/Dropbox/HelloNDK/jni/sox/src/effects.h \
+ /home/user/android-ndk-r5b/platforms/android-3/arch-arm/usr/include/assert.h \
+ /home/user/android-ndk-r5b/platforms/android-3/arch-arm/usr/include/ctype.h \
+ /home/user/android-ndk-r5b/platforms/android-3/arch-arm/usr/include/fcntl.h \
+ /home/user/android-ndk-r5b/platforms/android-3/arch-arm/usr/include/linux/fcntl.h \
+ /home/user/android-ndk-r5b/platforms/android-3/arch-arm/usr/include/asm/fcntl.h \
+ /home/user/android-ndk-r5b/platforms/android-3/arch-arm/usr/include/asm-generic/fcntl.h \
+ /home/user/android-ndk-r5b/platforms/android-3/arch-arm/usr/include/unistd.h \
+ /home/user/android-ndk-r5b/platforms/android-3/arch-arm/usr/include/sys/select.h \
+ /home/user/android-ndk-r5b/platforms/android-3/arch-arm/usr/include/signal.h \
+ /home/user/android-ndk-r5b/platforms/android-3/arch-arm/usr/include/asm/signal.h \
+ /home/user/android-ndk-r5b/platforms/android-3/arch-arm/usr/include/asm-generic/signal.h \
+ /home/user/android-ndk-r5b/platforms/android-3/arch-arm/usr/include/asm/siginfo.h \
+ /home/user/android-ndk-r5b/platforms/android-3/arch-arm/usr/include/asm-generic/siginfo.h \
+ /home/user/android-ndk-r5b/platforms/android-3/arch-arm/usr/include/sys/sysconf.h \
+ /home/user/android-ndk-r5b/platforms/android-3/arch-arm/usr/include/linux/capability.h \
+ /home/user/android-ndk-r5b/platforms/android-3/arch-arm/usr/include/pathconf.h \
+ /home/user/Dropbox/HelloNDK/jni/sox/src/formats.h
+
+/home/user/Dropbox/HelloNDK/jni/sox/src/sox_i.h:
+
+/home/user/Dropbox/HelloNDK/jni/sox/src/soxomp.h:
+
+/home/user/Dropbox/HelloNDK/jni/sox/src/soxconfig.h:
+
+/home/user/Dropbox/HelloNDK/jni/sox/src/sox.h:
+
+/home/user/android-ndk-r5b/platforms/android-3/arch-arm/usr/include/limits.h:
+
+/home/user/android-ndk-r5b/platforms/android-3/arch-arm/usr/include/sys/cdefs.h:
+
+/home/user/android-ndk-r5b/platforms/android-3/arch-arm/usr/include/sys/cdefs_elf.h:
+
+/home/user/android-ndk-r5b/platforms/android-3/arch-arm/usr/include/sys/limits.h:
+
+/home/user/android-ndk-r5b/platforms/android-3/arch-arm/usr/include/linux/limits.h:
+
+/home/user/android-ndk-r5b/platforms/android-3/arch-arm/usr/include/machine/internal_types.h:
+
+/home/user/android-ndk-r5b/platforms/android-3/arch-arm/usr/include/machine/limits.h:
+
+/home/user/android-ndk-r5b/platforms/android-3/arch-arm/usr/include/sys/syslimits.h:
+
+/home/user/android-ndk-r5b/platforms/android-3/arch-arm/usr/include/stdio.h:
+
+/home/user/android-ndk-r5b/platforms/android-3/arch-arm/usr/include/sys/_types.h:
+
+/home/user/android-ndk-r5b/platforms/android-3/arch-arm/usr/include/machine/_types.h:
+
+/home/user/android-ndk-r5b/platforms/android-3/arch-arm/usr/include/sys/types.h:
+
+/home/user/android-ndk-r5b/platforms/android-3/arch-arm/usr/include/stdint.h:
+
+/home/user/android-ndk-r5b/platforms/android-3/arch-arm/usr/include/linux/posix_types.h:
+
+/home/user/android-ndk-r5b/platforms/android-3/arch-arm/usr/include/linux/stddef.h:
+
+/home/user/android-ndk-r5b/platforms/android-3/arch-arm/usr/include/linux/compiler.h:
+
+/home/user/android-ndk-r5b/platforms/android-3/arch-arm/usr/include/asm/posix_types.h:
+
+/home/user/android-ndk-r5b/platforms/android-3/arch-arm/usr/include/asm/types.h:
+
+/home/user/android-ndk-r5b/platforms/android-3/arch-arm/usr/include/linux/types.h:
+
+/home/user/android-ndk-r5b/platforms/android-3/arch-arm/usr/include/machine/kernel.h:
+
+/home/user/android-ndk-r5b/platforms/android-3/arch-arm/usr/include/sys/sysmacros.h:
+
+/home/user/android-ndk-r5b/platforms/android-3/arch-arm/usr/include/stdlib.h:
+
+/home/user/android-ndk-r5b/platforms/android-3/arch-arm/usr/include/string.h:
+
+/home/user/android-ndk-r5b/platforms/android-3/arch-arm/usr/include/malloc.h:
+
+/home/user/android-ndk-r5b/platforms/android-3/arch-arm/usr/include/alloca.h:
+
+/home/user/android-ndk-r5b/platforms/android-3/arch-arm/usr/include/strings.h:
+
+/home/user/android-ndk-r5b/platforms/android-3/arch-arm/usr/include/memory.h:
+
+/home/user/Dropbox/HelloNDK/jni/sox/src/soxstdint.h:
+
+/home/user/Dropbox/HelloNDK/jni/sox/src/util.h:
+
+/home/user/android-ndk-r5b/platforms/android-3/arch-arm/usr/include/sys/stat.h:
+
+/home/user/android-ndk-r5b/platforms/android-3/arch-arm/usr/include/sys/time.h:
+
+/home/user/android-ndk-r5b/platforms/android-3/arch-arm/usr/include/linux/time.h:
+
+/home/user/android-ndk-r5b/platforms/android-3/arch-arm/usr/include/linux/stat.h:
+
+/home/user/android-ndk-r5b/platforms/android-3/arch-arm/usr/include/endian.h:
+
+/home/user/android-ndk-r5b/platforms/android-3/arch-arm/usr/include/sys/endian.h:
+
+/home/user/Dropbox/HelloNDK/jni/sox/src/xmalloc.h:
+
+/home/user/android-ndk-r5b/platforms/android-3/arch-arm/usr/include/math.h:
+
+/home/user/android-ndk-r5b/platforms/android-3/arch-arm/usr/include/errno.h:
+
+/home/user/android-ndk-r5b/platforms/android-3/arch-arm/usr/include/linux/errno.h:
+
+/home/user/android-ndk-r5b/platforms/android-3/arch-arm/usr/include/asm/errno.h:
+
+/home/user/android-ndk-r5b/platforms/android-3/arch-arm/usr/include/asm-generic/errno.h:
+
+/home/user/android-ndk-r5b/platforms/android-3/arch-arm/usr/include/asm-generic/errno-base.h:
+
+/home/user/android-ndk-r5b/platforms/android-3/arch-arm/usr/include/byteswap.h:
+
+/home/user/Dropbox/HelloNDK/jni/sox/src/effects.h:
+
+/home/user/android-ndk-r5b/platforms/android-3/arch-arm/usr/include/assert.h:
+
+/home/user/android-ndk-r5b/platforms/android-3/arch-arm/usr/include/ctype.h:
+
+/home/user/android-ndk-r5b/platforms/android-3/arch-arm/usr/include/fcntl.h:
+
+/home/user/android-ndk-r5b/platforms/android-3/arch-arm/usr/include/linux/fcntl.h:
+
+/home/user/android-ndk-r5b/platforms/android-3/arch-arm/usr/include/asm/fcntl.h:
+
+/home/user/android-ndk-r5b/platforms/android-3/arch-arm/usr/include/asm-generic/fcntl.h:
+
+/home/user/android-ndk-r5b/platforms/android-3/arch-arm/usr/include/unistd.h:
+
+/home/user/android-ndk-r5b/platforms/android-3/arch-arm/usr/include/sys/select.h:
+
+/home/user/android-ndk-r5b/platforms/android-3/arch-arm/usr/include/signal.h:
+
+/home/user/android-ndk-r5b/platforms/android-3/arch-arm/usr/include/asm/signal.h:
+
+/home/user/android-ndk-r5b/platforms/android-3/arch-arm/usr/include/asm-generic/signal.h:
+
+/home/user/android-ndk-r5b/platforms/android-3/arch-arm/usr/include/asm/siginfo.h:
+
+/home/user/android-ndk-r5b/platforms/android-3/arch-arm/usr/include/asm-generic/siginfo.h:
+
+/home/user/android-ndk-r5b/platforms/android-3/arch-arm/usr/include/sys/sysconf.h:
+
+/home/user/android-ndk-r5b/platforms/android-3/arch-arm/usr/include/linux/capability.h:
+
+/home/user/android-ndk-r5b/platforms/android-3/arch-arm/usr/include/pathconf.h:
+
+/home/user/Dropbox/HelloNDK/jni/sox/src/formats.h:

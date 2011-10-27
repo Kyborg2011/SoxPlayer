@@ -1,0 +1,12 @@
+prefix=/usr/local
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: SoX
+Description: Audio file format and effects library
+Version: 14.3.2
+URL: http://sox.sourceforge.net
+Libs: -L${libdir} -lsox
+Libs.private: -lc -lgcc -lcutils -lutils -lEGL -lgsm -logg -lvorbis -lvorbisenc -lmp3lame -lvorbisfile -lFLAC -lsmr -lsmrx -lwavpack -lpostproc -lswscale -lavcodec -lavutil -lavformat -lffmpeg -llpc10 -lmad  -lsndfile -lfmemopen
+Cflags: -I${includedir}

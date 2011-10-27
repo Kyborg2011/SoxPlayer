@@ -1,0 +1,12 @@
+prefix=/usr/local
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: sndfile
+Description: A library for reading and writing audio files
+Requires: 
+Version: 1.0.24
+Libs: -L${libdir} -lsndfile
+Libs.private: -L/home/user/android-ndk-r5b/apps/HelloNDK/libs/armeabi -lsox   -L/home/user/android-ndk-r5b/apps/HelloNDK/libs/armeabi -lsox  
+Cflags: -I${includedir} 

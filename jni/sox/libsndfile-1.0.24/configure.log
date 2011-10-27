@@ -1,0 +1,284 @@
+configure: WARNING: if you wanted to set the --build type, don't use --host.
+    If a cross compiler is detected then cross compile mode will be used
+checking build system type... i686-pc-linux-gnu
+checking host system type... arm-unknown-eabi
+checking target system type... arm-unknown-eabi
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for arm-eabi-strip... no
+checking for strip... strip
+checking for a thread-safe mkdir -p... /bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking for arm-eabi-gcc... /home/user/android-ndk/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/arm-eabi-gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... yes
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether /home/user/android-ndk/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/arm-eabi-gcc accepts -g... yes
+checking for /home/user/android-ndk/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/arm-eabi-gcc option to accept ISO C89... none needed
+checking for style of include used by make... GNU
+checking dependency style of /home/user/android-ndk/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/arm-eabi-gcc... gcc3
+checking whether /home/user/android-ndk/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/arm-eabi-gcc and cc understand -c and -o together... yes
+checking for arm-eabi-g++... no
+checking for arm-eabi-c++... no
+checking for arm-eabi-gpp... no
+checking for arm-eabi-aCC... no
+checking for arm-eabi-CC... no
+checking for arm-eabi-cxx... no
+checking for arm-eabi-cc++... no
+checking for arm-eabi-cl.exe... no
+checking for arm-eabi-FCC... no
+checking for arm-eabi-KCC... no
+checking for arm-eabi-RCC... no
+checking for arm-eabi-xlC_r... no
+checking for arm-eabi-xlC... no
+checking for g++... g++
+configure: WARNING: using cross tools not prefixed with host triplet
+checking whether we are using the GNU C++ compiler... yes
+checking whether g++ accepts -g... yes
+checking dependency style of g++... gcc3
+checking for a sed that does not truncate output... /bin/sed
+checking for a sed that does not truncate output... (cached) /bin/sed
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking for fgrep... /bin/grep -F
+checking for ld used by /home/user/android-ndk/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/arm-eabi-gcc... /home/user/android-ndk/build/prebuilt/linux-x86/arm-eabi-4.4.0/arm-eabi/bin/ld
+checking if the linker (/home/user/android-ndk/build/prebuilt/linux-x86/arm-eabi-4.4.0/arm-eabi/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... no
+checking for arm-eabi-dumpbin... no
+checking for arm-eabi-link... no
+checking for dumpbin... no
+checking for link... link -dump -symbols
+checking the name lister (link -dump -symbols) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking whether the shell understands some XSI constructs... yes
+checking whether the shell understands "+="... yes
+checking for /home/user/android-ndk/build/prebuilt/linux-x86/arm-eabi-4.4.0/arm-eabi/bin/ld option to reload object files... -r
+checking for arm-eabi-objdump... no
+checking for objdump... objdump
+checking how to recognize dependent libraries... unknown
+checking for arm-eabi-ar... no
+checking for ar... ar
+checking for arm-eabi-strip... strip
+checking for arm-eabi-ranlib... no
+checking for ranlib... ranlib
+checking command to parse link -dump -symbols output from /home/user/android-ndk/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/arm-eabi-gcc object... failed
+checking how to run the C preprocessor... /home/user/android-ndk/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/arm-eabi-gcc -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking for dlfcn.h... yes
+checking whether we are using the GNU C++ compiler... (cached) yes
+checking whether g++ accepts -g... (cached) yes
+checking dependency style of g++... (cached) gcc3
+checking how to run the C++ preprocessor... g++ -E
+checking for objdir... .libs
+checking if /home/user/android-ndk/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/arm-eabi-gcc supports -fno-rtti -fno-exceptions... no
+checking for /home/user/android-ndk/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/arm-eabi-gcc option to produce PIC... -fPIC -DPIC
+checking if /home/user/android-ndk/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/arm-eabi-gcc PIC flag -fPIC -DPIC works... yes
+checking if /home/user/android-ndk/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/arm-eabi-gcc static flag -static works... no
+checking if /home/user/android-ndk/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/arm-eabi-gcc supports -c -o file.o... yes
+checking if /home/user/android-ndk/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/arm-eabi-gcc supports -c -o file.o... (cached) yes
+checking whether the /home/user/android-ndk/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/arm-eabi-gcc linker (/home/user/android-ndk/build/prebuilt/linux-x86/arm-eabi-4.4.0/arm-eabi/bin/ld) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... yes
+checking dynamic linker characteristics... no
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... no
+checking whether to build shared libraries... no
+checking whether to build static libraries... yes
+checking for ld used by g++... /home/user/android-ndk/build/prebuilt/linux-x86/arm-eabi-4.4.0/arm-eabi/bin/ld
+checking if the linker (/home/user/android-ndk/build/prebuilt/linux-x86/arm-eabi-4.4.0/arm-eabi/bin/ld) is GNU ld... yes
+checking whether the g++ linker (/home/user/android-ndk/build/prebuilt/linux-x86/arm-eabi-4.4.0/arm-eabi/bin/ld) supports shared libraries... no
+checking for g++ option to produce PIC... -fPIC -DPIC
+checking if g++ PIC flag -fPIC -DPIC works... yes
+checking if g++ static flag -static works... no
+checking if g++ supports -c -o file.o... yes
+checking if g++ supports -c -o file.o... (cached) yes
+checking whether the g++ linker (/home/user/android-ndk/build/prebuilt/linux-x86/arm-eabi-4.4.0/arm-eabi/bin/ld) supports shared libraries... no
+checking dynamic linker characteristics... no
+checking how to hardcode library paths into programs... immediate
+checking for arm-eabi-windres... no
+checking for windres... no
+checking for autogen... no
+checking for wine... yes
+checking whether ln -s works... yes
+checking for ANSI C header files... (cached) yes
+checking endian.h usability... yes
+checking endian.h presence... yes
+checking for endian.h... yes
+checking byteswap.h usability... yes
+checking byteswap.h presence... yes
+checking for byteswap.h... yes
+checking locale.h usability... yes
+checking locale.h presence... yes
+checking for locale.h... yes
+checking sys/time.h usability... yes
+checking sys/time.h presence... yes
+checking for sys/time.h... yes
+checking for sys/wait.h that is POSIX.1 compatible... yes
+checking whether S_IRGRP is declared... yes
+checking C99 struct flexible array support... yes
+checking size of wchar_t... 1
+checking size of short... 2
+checking size of int... 4
+checking size of long... 4
+checking size of float... 4
+checking size of double... 8
+checking size of void*... 4
+checking size of size_t... 4
+checking size of int64_t... 8
+checking size of long long... 8
+checking size of off_t... 4
+checking size of loff_t... 8
+checking size of off64_t... 8
+checking for arm-eabi-getconf... no
+checking for getconf... getconf
+checking for CFLAGS value to request large file support... -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
+checking for LDFLAGS value to request large file support... 
+checking for LIBS value to request large file support... 
+checking for _FILE_OFFSET_BITS... 64
+checking for _LARGEFILE_SOURCE... 1
+checking for _LARGE_FILES... no
+checking size of off_t... 4
+configure: WARNING: This machine does not seem to support 64 bit file offsets.
+checking for ssize_t... yes
+checking size of ssize_t... 4
+checking processor byte ordering... little
+checking for malloc... yes
+checking for calloc... yes
+checking for realloc... yes
+checking for free... yes
+checking for open... yes
+checking for read... yes
+checking for write... yes
+checking for lseek... yes
+checking for pread... yes
+checking for pwrite... yes
+checking for fstat... yes
+checking for ftruncate... yes
+checking for fsync... yes
+checking for snprintf... yes
+checking for vsnprintf... yes
+checking for gmtime... yes
+checking for gmtime_r... yes
+checking for localtime... yes
+checking for localtime_r... yes
+checking for gettimeofday... yes
+checking for mmap... yes
+checking for getpagesize... no
+checking for setlocale... yes
+checking for pipe... yes
+checking for waitpid... yes
+checking for floor in -lm... yes
+checking for floor... yes
+checking for ceil... yes
+checking for fmod... yes
+checking for lrint... no
+checking for lrintf... no
+checking for arm-eabi-pkg-config... no
+checking for pkg-config... /usr/bin/pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking for flac >= 1.2.1 ... no
+checking for ogg >= 1.1.3 ... no
+checking for vorbis >= 1.2.3 ... no
+checking for vorbisenc >= 1.2.3 ... no
+
+configure: WARNING: *** One or more of the external libraries (ie libflac, libogg and
+configure: WARNING: *** libvorbis) is either missing (possibly only the development
+configure: WARNING: *** headers) or is of an unsupported version.
+configure: WARNING: ***
+configure: WARNING: *** Unfortunately, for ease of maintenance, the external libs
+configure: WARNING: *** are an all or nothing affair.
+
+checking for sqlite3 >= 3.2 ... no
+checking processor clipping capabilities... none
+checking alsa/asoundlib.h usability... no
+checking alsa/asoundlib.h presence... no
+checking for alsa/asoundlib.h... no
+checking sndio.h usability... no
+checking sndio.h presence... no
+checking for sndio.h... no
+configure: WARNING: ******************************************************************
+configure: WARNING: *** We are cross-compiling, so have to assume sizeof (short) == 2 
+configure: WARNING: *** and sizeof (int) == 4. If this is not the case there is no    
+configure: WARNING: *** chance of this working. Please contact the mantainer.         
+configure: WARNING: ******************************************************************
+configure: WARNING: Touching files in directory tests/.
+checking if /home/user/android-ndk/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/arm-eabi-gcc accepts -std=gnu99... no
+checking for version of /home/user/android-ndk/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/arm-eabi-gcc... 4.4.0
+checking if /home/user/android-ndk/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/arm-eabi-gcc accepts -Wextra... no
+checking if g++ accepts -Wextra... no
+checking if /home/user/android-ndk/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/arm-eabi-gcc accepts -Wdeclaration-after-statement... no
+checking if /home/user/android-ndk/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/arm-eabi-gcc accepts -Wpointer-arith... no
+checking if /home/user/android-ndk/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/arm-eabi-gcc accepts -funsigned-char... no
+configure: creating ./config.status
+config.status: creating src/sndfile.h
+config.status: creating src/Makefile
+config.status: creating src/GSM610/Makefile
+config.status: creating src/G72x/Makefile
+config.status: creating src/version-metadata.rc
+config.status: creating man/Makefile
+config.status: creating examples/Makefile
+config.status: creating tests/Makefile
+config.status: creating regtest/Makefile
+config.status: creating M4/Makefile
+config.status: creating doc/Makefile
+config.status: creating Win32/Makefile
+config.status: creating Octave/Makefile
+config.status: creating programs/Makefile
+config.status: creating doc/libsndfile.css
+config.status: creating Makefile
+config.status: creating libsndfile.spec
+config.status: creating sndfile.pc
+config.status: creating tests/test_wrapper.sh
+config.status: creating tests/pedantic-header-test.sh
+config.status: creating build-test-tarball.mk
+config.status: creating src/config.h
+config.status: src/config.h is unchanged
+config.status: executing depfiles commands
+config.status: executing libtool commands
+
+-=-=-=-=-=-=-=-=-=-= Configuration Complete =-=-=-=-=-=-=-=-=-=-
+
+  Configuration summary :
+
+    libsndfile version : .................. 1.0.24
+
+    Host CPU : ............................ arm
+    Host Vendor : ......................... unknown
+    Host OS : ............................. eabi
+
+    Experimental code : ................... no
+    Using ALSA in example programs : ...... no
+    External FLAC/Ogg/Vorbis : ............ no
+
+  Tools :
+
+    Compiler is GCC : ..................... yes
+    GCC version : ......................... 4.4.0
+
+  Installation directories :
+
+    Library directory : ................... /usr/local/lib
+    Program directory : ................... /usr/local/bin
+    Pkgconfig directory : ................. /usr/local/lib/pkgconfig
+    HTML docs directory : ................. /usr/local/share/doc/libsndfile1-dev/html
+
+Compiling some other packages against libsndfile may require
+the addition of '/usr/local/lib/pkgconfig' to the
+PKG_CONFIG_PATH environment variable.
+
+make: Nothing to be done for `genfiles'.
+make: Nothing to be done for `genfiles'.
