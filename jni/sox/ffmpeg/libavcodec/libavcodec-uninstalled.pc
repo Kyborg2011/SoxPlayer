@@ -1,0 +1,12 @@
+prefix=
+exec_prefix=
+libdir=${pcfiledir}
+includedir=/home/user/android-ndk-r5b/apps/HelloNDK/jni/sox/ffmpeg
+
+Name: libavcodec
+Description: FFmpeg codec library
+Version: 53.5.0
+Requires: libavutil = 51.2.1
+Conflicts:
+Libs: ${libdir}/libavcodec.a 
+Cflags: -I${includedir}

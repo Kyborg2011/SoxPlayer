@@ -1,0 +1,12 @@
+prefix=
+exec_prefix=
+libdir=${pcfiledir}
+includedir=/home/user/android-ndk-r5b/apps/HelloNDK/jni/sox/ffmpeg
+
+Name: libavformat
+Description: FFmpeg container format library
+Version: 53.0.3
+Requires: libavcodec = 53.5.0
+Conflicts:
+Libs: ${libdir}/libavformat.a 
+Cflags: -I${includedir}
