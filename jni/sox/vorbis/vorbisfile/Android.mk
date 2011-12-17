@@ -21,7 +21,7 @@ LOCAL_SRC_FILES := vorbisfile.c
 LOCAL_SHARED_LIBRARIES := liblpc10 libgsm libogg libvorbis	
 
 
-LOCAL_LDLIBS := -ldl -lGLESv1_CM -llog -L/home/user/Dropbox/HelloNDK/obj/local/armeabi-v7a
+LOCAL_LDLIBS := -ldl -lGLESv1_CM -llog -L$(DIRECTORY_TO_OBJ)
 
 include $(BUILD_SHARED_LIBRARY)
 
