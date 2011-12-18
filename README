@@ -3,3 +3,7 @@ To test the SoX can compile this program and start it on your Android device. Th
 Attention! This program is unstable, so I can not guarantee the music on your device.
 If you want to do something to help this project - please contact us by email: wkyborgw@gmail.com
 Enjoy!
+
+WARNING:
+The project compiles fine on Linux, 
+BUT when compiling on Windows via Cygwin can be a problem.
